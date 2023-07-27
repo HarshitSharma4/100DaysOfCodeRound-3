@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --hue: 200;
+    --bkg: var(--hue) 70% 80%;
+    --text: var(--hue) 20% 20%;
+    --dark: var(--hue) 20% 3%;
+}
+
+body {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    background: linear-gradient(hsl(var(--bkg)) ,hsl(var(--dark)));
+    position: relative;
+}
+.container {
+    max-width: 85%;
+    margin: auto;
+}
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+    overflow: hidden;
+    
+}
+.image-item {
+    flex: 1 0 28%;
+    min-width: 200px;
+    cursor: zoom-in;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.image-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 250ms cubic-bezier(0.79, 0.25, 0, 1.07);
+}
+.image-item:is(:hover, :focus) img {
+    transform: scale(1.03);
+    border-radius: 10px;
+}
+  
+.model-container{
+    position: absolute;
+    inset: 0;
+    top:0;
+    background: linear-gradient(rgba(141, 181, 241, 0.1),hsl(var(--dark))); 
+    display: none;
+    /* display: grid; */
+    place-items: center;
+    height: 100vh;
+}
+
+.model-overlay{
+    display: grid;
+    place-items: center;
+    
+    position: relative;
+}
+.model-btn-cntainer{
+    display:flex;
+    gap: 2rem;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+    bottom: 1rem;
+    background: transparent;
+}
+.imageContainer{
+    
+   height: 100%;
+   width: 100%;
+
+}
+.imageContainer img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    
+}
+
+
+
+.model-btn-cntainer i{
+    color: brown;
+    font-size: 3rem;
+    border:solid 2px brown;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background: transparent;
+    cursor: pointer;
+    transition: ease-in-out all;
+    -webkit-transition: ease-in-out all;
+    -moz-transition: ease-in-out all;
+    -ms-transition: ease-in-out all;
+    -o-transition: ease-in-out all;
+}
+.model-btn-cntainer i:is(:hover, :focus){
+          transform: translatey(-2px);
+          -webkit-transform: translatey(-2px);
+          -moz-transform: translatey(-2px);
+          -ms-transform: translatey(-2px);
+          -o-transform: translatey(-2px);
+          background-color: brown;
+          color: #fff;
+}
+.arrow{
+    background-color: transparent;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+
+.indicator-container{
+    position: absolute;
+    bottom:5.5rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width:10rem;
+
+}
+ 
+.indicator-container .indicator-btn{
+    height: 15px;
+    width:15px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background-color: rgb(165, 165, 194);
+    transition: ease-in-out all;
+
+}
+.indicator-container .indicator-btn.active{
+    background-color: rgb(84, 84, 101);
+    height: 18px;
+    width: 18px;
+    transform: translateY(-2px);
+    
+}

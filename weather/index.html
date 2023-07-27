@@ -1,0 +1,74 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Web</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- fontawesome -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Lato&family=Poppins:wght@300;400;700&family=Roboto+Condensed&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="background-weather">
+        <div id="weather">
+          <h1 id="temprature">20</h1>
+          <div class="degree"></div>
+          <div > <h1 id="location">Udaipur</h1>
+            <p id="time-date">6:09 PM-Sunday,18/06 </p>
+        </div>
+         
+          <img id="weather-image" src="images/rain.png" alt="rain">
+
+        </div>
+        <div id="information">
+            <div >
+               
+                    <input type="text" placeholder="Aother Location" id="city">
+                    <button id="search"> <svg width="24" height="24" fill="none" viewBox="0 0 24 24">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19.25 19.25L15.5 15.5M4.75 11C4.75 7.54822 7.54822 4.75 11 4.75C14.4518 4.75 17.25 7.54822 17.25 11C17.25 14.4518 14.4518 17.25 11 17.25C7.54822 17.25 4.75 14.4518 4.75 11Z"/>
+                    </svg></button>
+                
+               <hr width="70%">
+                <div class="suggestion">
+                    <h3 class="jaipur">Jaipur</h3>
+                    <h3 class="bangalore">Bangalore</h3>
+                    <h3 class="mumbai">Mumbai</h3>
+                    <h3 class="goa">Goa</h3>
+                </div>
+                <hr>
+            </div>
+            <div class="weather-detail">
+                <h2>Weather details</h2>
+                <div class="detail">
+                    <div class="cloud">
+                        <h3>Cloudy</h3>
+                        <h3 id="cloud">80%</h3>
+                    </div>
+                    <div class="humadity">
+                        <h3>Humidity</h3>
+                        <h3 id="humadity">80%</h3>
+                        
+                    </div>
+                    <div class="wind">
+                        <h3>Wind</h3>
+                        <h3 id="wind">80%</h3>
+                    
+                    </div>
+                    <div class="rain">
+                        <h3>Rain</h3>
+                        <h3 id="rain">0</h3>
+                      
+                    </div>
+                    <hr>
+                </div>
+            </div>
+              
+               
+        </div>
+    </div>
+    
+    <script src="project.js"></script>
+</body>
+</html>

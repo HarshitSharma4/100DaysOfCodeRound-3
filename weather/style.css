@@ -1,0 +1,119 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  /* color */
+  --BackgroundColor: #000;
+  --textColor: #e0dbdb;
+  --subtextColor: #fff;
+
+  --rain:#3d5f29;
+ 
+}
+
+body {
+  background-color: var(--BackgroundColor);
+  color: var(--textColor);
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+#background-weather {
+    background-image: linear-gradient(rgba(101, 120, 224, 0.1), rgba(96, 94, 116, 0.6)),url("backgroundImage/rain.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 80%;
+  min-height: 80%;
+  border-radius: 10px;
+
+}
+
+#weather {
+  display: flex;
+  align-items: end;
+  justify-content: left;
+  height: 500px;
+  width: 100%;
+  flex-basis: 70%;
+  font-size: 1.5rem;
+}
+#weather >h1,
+img,
+p,
+div {
+  display: inline;
+  margin: 10px;
+  
+}
+#weather .degree {
+  border-radius: 100%;
+  border: solid 5px var(--textColor);
+  height: 20px;
+  width: 20px;
+  position: relative;
+  bottom: 70px;
+  background: transparent;
+  margin-left: 0;
+}
+#weather-image{
+    height: 10rem;
+    width: 10rem;
+    position: relative;
+    top:20px;
+}
+#temprature{
+    font-size: 5rem;
+}
+#location{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    bottom: 2px;
+}
+
+#information{
+    background-color: rgba(2, 2, 2,0.4);
+    margin: 0;
+    padding: 2rem;
+    position: relative;
+}
+#search{
+    position:absolute;
+    height: 5rem;
+    width: 5rem;
+    top:0;
+    right:0;
+    font-size:3rem;
+    background-color: var(--rain);
+}
+#city{
+    border: 0;
+    outline: 0;
+    font-size: 1rem;
+    color:var(--subtextColor);
+   
+    background-color:transparent;
+
+}
+
+.cloud,.humadity,.wind,.rain{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.jaipur,.bangalore,.mumbai,.goa{
+  padding:7px 0;
+  cursor:context-menu;
+}
+.select{
+  background-color: #3b3c44;
+}

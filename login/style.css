@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+:root {
+  --backgroundColor: rgb(122, 143, 191);
+  --login-content-background: rgb(209, 230, 234);
+  --welcome-color: rgb(66, 66, 249);
+  --text-color: rgb(62, 61, 61);
+}
+
+body {
+  background: var(--backgroundColor);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background: url(image/pexels-fabian-reitmeier-707915.jpg) no-repeat center
+    center / cover;
+  height: 85%;
+  width: 85%;
+  border-radius: 10px;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+.login-content {
+  height: 75%;
+  width: 45%;
+  background: var(--login-content-background);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  margin-right: 3rem;
+  padding: 2rem;
+}
+
+.login-title span {
+  color: var(--welcome-color);
+  font-size: 3rem;
+}
+.login-title {
+  margin: 1rem 0;
+  margin-right: 1rem;
+  font-size: 2rem;
+}
+
+.login-form p {
+  font-size: 1.3rem;
+  color: var(--text-color);
+  margin: 1rem 0;
+}
+
+.paremeter {
+  display: block;
+  font-size: 1.5rem;
+  margin: 1rem 0 0.5rem 0rem;
+}
+input {
+  height: 50px;
+  width: 100%;
+  border-radius: 7px;
+  border: solid 2px gray;
+  font-size: 1.3rem;
+  color: var(--text-color);
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+}
+
+#checkbox {
+  height: 20px;
+  width: 20px;
+  margin-right: 1rem;
+}
+.checkbox {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin: 1rem 0 0.5rem 0rem;
+  font-size: 1.3rem;
+}
+
+.btn {
+    margin: 1rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.btn .login-btn {
+  background-color: #001bf2;
+  height: 4.5rem;
+  width: 15rem;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  color: #fff;
+  outline: none;
+  border: solid 2px #001bf2;
+}
+
+.btn .signUp-btn {
+   height: 4.5rem;
+   width: 15rem;
+   background-color: var(--login-content-background);
+   font-size: 1.5rem;
+  border-radius: 10px;
+  color: #001bf2;
+  outline: none;
+
+  border: solid 2px #001bf2;
+}
+
+.inputpassword{
+    position: relative;
+}
+.inputpassword i{
+    position: absolute;
+    font-size: 1.5rem;
+    top:0;
+    right: 0;
+    margin:10px;
+}
+
+
+@media (max-width:1024px) {
+    .container{
+        justify-content: center;
+        height: 61%;
+        width: 90%;
+    }
+    .login-title span{
+        font-size: 1.5rem;
+    }
+    .login-title{
+        font-size: 1rem;
+    }
+    .login-form p{
+        font-size: 0.7rem;
+    }
+    .paremeter{
+        font-size: 1rem;
+    }
+    input{
+        font-size: 0.7rem;
+        height: 30px;
+    }
+    #checkbox {
+        height: 10px;
+        width: 10px;
+      
+    }
+    .btn .login-btn{
+        height: 4rem;
+        width: 6rem;
+    }
+    .btn .signUp-btn{
+        height: 4rem;
+        width:  6rem;
+    }
+
+}

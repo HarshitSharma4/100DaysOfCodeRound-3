@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Music Player</title>
+    <link rel="stylesheet" href="app.css" />
+
+    <!--  font awsem icon   -->
+    <script src="https://kit.fontawesome.com/172e7dfec2.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="top-bar">
+            <i class="fa-solid fa-angle-down" id="down"></i>
+            <h3>Now playing</h3>
+            <i class="fa-solid fa-bars" id="more"></i>
+        </div>
+        <div class="artist">
+            <div class="image-wrap">
+                <img src="https://i.ytimg.com/vi/kffacxfA7G4/maxresdefault.jpg" alt="artist image" id="artist-image" />
+            </div>
+            <div class="artist-title">
+                <p id="Song-name">Song Name</p>
+                <h4 id="artist-name">anonymous</h4>
+            </div>
+        </div>
+        <div id="progress-detail">
+            <div id="progress">
+                <span></span>
+            </div>
+          
+        </div>
+        <div id="time">
+            <div id="current">00:00</div>
+            <div id="final">05:00</div>
+        </div>
+        <div id="control-btn">
+            <div id="loop">
+                <i class="fa-sharp fa-solid fa-arrow-right"></i>
+                <i class="fa-sharp fa-solid fa-arrow-left-long"></i>
+            </div>
+            <i class="fa-solid fa-backward-step" id="previous"></i>
+            <div id="play-pause">
+                <i class="fa-solid fa-play" id="play"></i>
+            </div>
+            
+            <i class="fa-solid fa-forward-step" id="next"></i>
+            <i class="fa-solid fa-shuffle" id="shuffle"></i>
+        </div>
+
+    </div>
+   
+    <audio src="../../Music/Ed Sheeran - Perfect (Lyrics).mp3" class="main-song" muted="true"></audio>
+    <script src="app.js"></script>
+
+</body>
+
+</html>

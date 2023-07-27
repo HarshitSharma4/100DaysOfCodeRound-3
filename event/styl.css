@@ -1,0 +1,97 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(8, 8, 104);
+  text-align: center;
+  color: cornsilk;
+}
+.btn {
+  border: 5px solid cornsilk;
+  background-color: transparent;
+  height: 3rem;
+  width: 7rem;
+
+  color: cornsilk;
+  font-size: 1.5rem;
+  border-radius: 10px;
+}
+.main-hading {
+  font-size: 4rem;
+}
+.container {
+  margin: 4rem auto;
+  padding: 7rem 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.boxes {
+  border: 5px solid cornsilk;
+  height: 18rem;
+  width: 16rem;
+  border-radius: 10px;
+}
+.hading {
+  padding: 5rem 0;
+}
+.budding {
+  margin: 7rem auto;
+  background-color: rgb(238, 11, 11);
+  border: 5px solid rgb(255, 255, 255);
+  border-radius: 10px;
+  height: 30rem;
+  width: 30rem;
+  text-align: center;
+}
+.div-2 {
+  margin: auto;
+  background-color: rgb(15, 11, 238);
+  border: 5px solid rgb(255, 255, 255);
+  border-radius: 10px;
+  height: 25rem;
+  width: 25rem;
+}
+.div-3 {
+  margin: auto;
+  background-color: rgb(11, 238, 227);
+  border: 5px solid rgb(255, 255, 255);
+  border-radius: 10px;
+  height: 20rem;
+  width: 20rem;
+}
+
+.div-4 {
+  margin: auto;
+  background-color: rgb(56, 238, 11);
+  border: 5px solid rgb(255, 255, 255);
+  border-radius: 10px;
+  height: 15rem;
+  width: 15rem;
+}
+.click {
+  margin: auto;
+  background-color: rgb(251, 255, 3);
+  border: 5px solid rgb(255, 255, 255);
+  border-radius: 10px;
+  height: 10rem;
+  width: 10rem;
+  font-size: 1.5rem;
+  color:black;
+}
+
+
+.text-revel{
+    margin:7rem 35rem;
+
+}
+.revel-btn{
+    border: 10px solid cornsilk;
+    display: block;
+}
+
+
+

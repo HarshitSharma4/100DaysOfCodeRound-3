@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #141626;
+    height: 100vh;
+
+}
+
+.image-slider{
+    position: relative;
+    height: 800px;
+    width: 800px;
+    margin: 10px;
+    background-color: #141626;
+}
+
+.image-slider .slider{
+    z-index:1;
+    position: absolute;
+    width: 100%;
+    clip-path: circle(0% at 0 50%);
+}
+
+
+.image-slider .slider.active{
+    clip-path: circle(100% at  50%);
+    transition: 2s;
+    
+}
+
+
+.image-slider .slider img{
+    z-index:1;
+    width: 100%;
+    border-radius: 5px;
+    height: 50%;
+    
+}
+
+.image-slider .slider .info{
+    z-index:1;
+    position: absolute;
+    width: 100%;
+    top:0;
+    margin: 15px 30px;
+    color: #fff;
+}
+.image-slider .slider .info h3{
+    font-size: 2rem;
+  
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 800;
+}
+
+.image-slider .slider .info p{
+    border-radius: 4px;
+    font-size: 1rem;
+    padding:10px;
+    background-color: rgba(0,0,0,0.4);
+    width:60%;
+}
+
+.image-slider .navigation{
+    position: absolute;
+    bottom: 30px;
+    left:50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    display: flex;
+}
+
+.image-slider .navigation .btn{
+    height: 12px;
+    width: 10px;
+    background-color: rgba(255,255,255, 0.7);
+    z-index: 1;
+    border-radius: 50%;
+    margin:10px;
+    cursor: pointer;
+}
+.image-slider .navigation .btn.active{
+    background-color: #4b54ad;
+}
+
+
+
+@media (max-width:850px){
+    .image-slider{
+        height: 400px;
+        width: 400px;
+    }
+    .image-slider .slider .info h3{
+        font-size: 1.3rem;
+        font-weight: 400;
+
+        
+    }
+    .image-slider .slider .info p{
+        font-size: 0.7rem;
+       
+
+        
+    }
+    .image-slider .navigation .btn{
+        height: 10px;
+  
+    }
+    .image-slider .navigation{
+        bottom: 50px;
+    }
+}
+
+

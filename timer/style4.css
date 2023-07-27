@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+body{
+    background: url(../images/timebackground.jpg) no-repeat center center /cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.stopwatch{
+    background:linear-gradient(90deg,#f5c3f4 50%,#baeefe 50%);
+    width: 40%;
+    height: 40%;
+
+}
+
+.timmer{
+    font-size: 4rem;
+    margin: 3.3rem auto;
+}
+
+.symbol{
+    font-size: 3rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.fy{
+    display: none; 
+}
+#start{
+    background-color: green;
+}
+#pause{
+    background-color: orange;
+}
+ #reset{
+    background-color: red;
+ }

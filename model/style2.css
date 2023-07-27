@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+body{
+    background: url(../images/pexels-meersameerclicks-6646334.jpg) no-repeat center center / cover;
+    display: flex;
+    height: 100vh;
+    position: relative;
+
+}
+
+.open-btn{
+    position: absolute;
+    top:70%;
+    left:10%;
+    border: solid 5px #fff;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    font-size: 2rem;
+    padding:1rem;
+    color: #fff;
+    background-color: transparent;
+}
+.open-btn:hover{
+    color: black;
+    background-color: #fff;
+}
+
+.model{
+    position: absolute;
+    background-color: #fff;
+    color: #000;
+    width:200px;
+    height: 90px;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top:50%;
+    left: 50%;
+    padding: 1rem;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    animation-name: model;
+    animation-duration: .4s;
+}
+
+.close-btn{
+    color:red;
+    font-size: 3rem;
+    cursor: pointer;
+}
+
+.model-cointainer{
+    display: none;
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgb(0,0,0,.2);
+}
+
+@keyframes model{
+    from{
+       opacity: 0;
+       top:-300px;
+    }
+    to{
+       opacity: 1;
+       top:50%;
+    }
+}

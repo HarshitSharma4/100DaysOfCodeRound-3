@@ -21,12 +21,6 @@
 
 
 
-
-const navigation= document.querySelector('.navigation');
-const profilePhoto =document.querySelector('.profilephoto'); 
-const container = document.querySelectorAll('.container');
-const about = document.querySelector('.about');
-
 // navigation.classList.add(show);
 
 // show.observe(profilePhoto);
@@ -34,6 +28,12 @@ const about = document.querySelector('.about');
 // container.forEach((el)=>{
 //     trshow.observe(el);
 // })
+
+const navigation= document.querySelector('.navigation');
+const profilePhoto =document.querySelector('.profilephoto'); 
+const container = document.querySelectorAll('.container');
+const about = document.querySelector('.about');
+
 
 
 function sleep(ms) {

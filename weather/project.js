@@ -10,6 +10,8 @@ async function checkWeather(city){
     
     if(response.status == 404){
         //dailog open
+        console.log("error 404");
+        return;
     }
 
     document.getElementById('temprature').innerHTML = Math.round(data.main.temp  -273.15);

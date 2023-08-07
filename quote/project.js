@@ -1,9 +1,7 @@
 let qoute=document.querySelector('.qoute');
 let person=document.querySelector('.person');
 let newQoute=document.querySelector('.new-qoute');
-
-
-const qoutesCollection=[{
+let qoutesCollection=[{
     qoute: `“All powers in the universe are already ours. It is we who have put our hands before our eyes and cry that it is dark.”`,
     person: `Swami Vivekananda`
 },{
@@ -26,10 +24,40 @@ const qoutesCollection=[{
     person: `Swami Vivekananda`
 }];
 
+// 10 responce 
+const url = `https://type.fit/api/quotes`;
+// 50 responce 
+//const url=`https://zenquotes.io/api/quotes`;
 
-newQoute.addEventListener('click',()=>{
-    let randomquote=Math.floor(Math.random()*qoutesCollection.length);
-    qoute.innerText=qoutesCollection[randomquote].qoute;
-    person.innerText=qoutesCollection[randomquote].person;
+async function qouteGenarator(){
+    const response = await fetch(url);
+     qoutesCollection = await response.json();
+    console.log(qoutesCollection);
+    newQoute.addEventListener('click',()=>{
+        let randomquote=Math.floor(Math.random()*qoutesCollection.length);
+        qoute.innerText=qoutesCollection[randomquote].text;
+        let a = qoutesCollection[randomquote].author;
+        a = a.split(", ");
+       
+        person.innerText=a[0];
 
-})
+    
+    })
+}
+  
+
+qouteGenarator();
+
+
+
+
+
+
+//const url = 'https://andruxnet-random-famous-quotes.p.rapidapi.com/?count=10&cat=famous';
+
+
+
+
+
+
+

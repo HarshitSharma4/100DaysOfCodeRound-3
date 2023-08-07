@@ -1,341 +1,466 @@
-*{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    font-family: 'Nunito', sans-serif;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Nunito", sans-serif;
 }
-
-body{
-    display:flex;
-    justify-content: center;
-    align-items: baseline;
-    flex-direction: column;
-
-}
-
 
 /* header section */
 
-#header{
-    max-width: 70%;
-    margin:1rem auto 0  ;
+#header {
+  max-width: 70%;
+  margin: 1rem auto 0;
 }
 
-.navigation{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.logo{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 10px;
+.logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
 }
-.logo img{
-    min-height: 25px;
-    max-width: 25px;
-}
-
-ul{
-    list-style: none;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap:2rem;
+.logo img {
+  min-height: 25px;
+  max-width: 25px;
 }
 
-ul a{
-    text-decoration: none;
-    color: black;
-    font-size: 1.2rem;
+ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
 }
 
-.profile{
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    justify-content: space-between;
-    margin: 3rem auto;
-}
-.profilephoto img{
-    min-height:27rem;
-    max-width:23rem;
-    border-radius: 35px;
-    
+ul a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.2rem;
 }
 
-.about{
-    /* background-image: url(images/WhatsApp\ Image\ 2023-07-27\ at\ 7.08.53\ PM.jpeg) ;  */
-    
-    /* background-size: cover; */
-    flex-basis:65%;
-    min-height:27rem;
-    overflow: hidden;
-    
-    border-radius: 35px;
-    position: relative;
-    
+.profile {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+  margin: 3rem auto;
 }
-.about-background{
-    height: 100%;
-    width:100%;
-    background-color: #0093E9;
-    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
-    position: absolute;
-    border-radius: 35px;
-    z-index: 0;
-}
-.content{
-    border-radius: 35px;
-    height: 100%;
-    width: 100%;
-    padding: 3rem;
-    background: transparent;
-    position: relative;
+.profilephoto img {
+  min-height: 27rem;
+  max-width: 23rem;
+  border-radius: 35px;
 }
 
-.circle1{
-    position: absolute;
-    height: 80%;
-    width: 80%;
-    background-color: #8EC5FC; background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
-    filter: blur(4rem);
-    top:-30%;
-    right:-30%;
-    border-radius: 100%;
+.about {
+  /* background-image: url(images/WhatsApp\ Image\ 2023-07-27\ at\ 7.08.53\ PM.jpeg) ;  */
+
+  /* background-size: cover; */
+  flex-basis: 65%;
+  min-height: 27rem;
+  overflow: hidden;
+
+  border-radius: 35px;
+  position: relative;
 }
-.circle2{
-    position: absolute;
-    height: 80%;
-    width: 80%;
-    background-color: #8EC5FC; background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
-    filter: blur(4rem);
-    bottom:-30%;
-    right:-30%;
-    border-radius: 100%;
+.about-background {
+  height: 100%;
+  width: 100%;
+  background-color: #0093e9;
+  background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
+  position: absolute;
+  border-radius: 35px;
+  z-index: 0;
+}
+.content {
+  border-radius: 35px;
+  height: 100%;
+  width: 100%;
+  padding: 3rem;
+  background: transparent;
+  position: relative;
 }
 
-.active1{
-    animation-name: updown;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
+.circle1 {
+  position: absolute;
+  height: 80%;
+  width: 80%;
+  background-color: #8ec5fc;
+  background-image: linear-gradient(62deg, #8ec5fc 0%, #e0c3fc 100%);
+  filter: blur(4rem);
+  top: -30%;
+  right: -30%;
+  border-radius: 100%;
 }
-.active2{
-    animation-name: rightleft;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
-}
-
-@keyframes updown{
-    0% {
-        top:0;
-        
-    }
-    25% { 
-        top:50%;
-        
-    }
-    50% {
-        bottom: -30%;
-    } 
-    75% {
-         top:50%;
-    }
-    100% {
-        top:-30%;
-    }
+.circle2 {
+  position: absolute;
+  height: 80%;
+  width: 80%;
+  background-color: #8ec5fc;
+  background-image: linear-gradient(62deg, #8ec5fc 0%, #e0c3fc 100%);
+  filter: blur(4rem);
+  bottom: -30%;
+  right: -30%;
+  border-radius: 100%;
 }
 
-@keyframes rightleft{
-    0% {
-        right:0;
-        
-    }
-    25% { 
-        right:50%;
-        
-    }
-    50% {
-        left: -30%;
-    } 
-    75% {
-         right:50%;
-    }
-    100% {
-        right:-30%;
-    } 
+.active1 {
+  animation-name: updown;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+.active2 {
+  animation-name: rightleft;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
 }
 
-h1{
-    margin: 2rem auto;
-    line-height: 3.5rem;
+@keyframes updown {
+  0% {
+    top: 0;
+  }
+  25% {
+    top: 50%;
+  }
+  50% {
+    bottom: -30%;
+  }
+  75% {
+    top: 50%;
+  }
+  100% {
+    top: -30%;
+  }
 }
 
-p{
-    line-height: 2rem;
-    font-size: 1.2rem;
-    margin: 2rem auto 0 ;
+@keyframes rightleft {
+  0% {
+    right: 0;
+  }
+  25% {
+    right: 50%;
+  }
+  50% {
+    left: -30%;
+  }
+  75% {
+    right: 50%;
+  }
+  100% {
+    right: -30%;
+  }
 }
 
-.social-media{
-    margin: 7rem auto 3rem;
-    display: flex;
-    gap:1.5rem;
-    align-items: center;
+h1 {
+  margin: 2rem auto;
+  line-height: 3.5rem;
 }
 
-.contact{
-    border-radius: 55px;
-    min-height: 50px;
-    width: 170px;
-    padding: 16px;   
-    font-size: 1rem;
-    color: azure;
-    background-color: black;
-    transition: all ease-in 1s;
-}
-.contact:hover{
-    background-color:rgb(18,18,18);
-    cursor: pointer;
+p {
+  line-height: 2rem;
+  font-size: 1.2rem;
+  margin: 2rem auto 0;
 }
 
-.fa-brands{
-    font-size: 2rem;
-    border-radius: 100%;
-    height: 50px;
-    width: 50px;
-    background-color: aliceblue;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-   
-}
-.fa-dribbble, .fa-instagram,.fa-twitter , .fa-linkedin-in{
-    transition: all ease-in-out 1.5s;
-}
-.fa-dribbble:hover , .fa-instagram:hover{
-    cursor: pointer;
-    background-color: #4158D0;
-    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
-
+.social-media {
+  margin: 7rem auto 3rem;
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
 }
 
-.fa-twitter:hover , .fa-linkedin-in:hover{
-    cursor: pointer;
-    background-color: #0093E9;
-    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
-
+.contact {
+  border-radius: 55px;
+  min-height: 50px;
+  width: 170px;
+  padding: 16px;
+  font-size: 1rem;
+  color: azure;
+  background-color: black;
+  transition: all ease-in 1s;
+}
+.contact:hover {
+  background-color: rgb(18, 18, 18);
+  cursor: pointer;
 }
 
+.fa-brands {
+  font-size: 2rem;
+  border-radius: 100%;
+  height: 50px;
+  width: 50px;
+  background-color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fa-dribbble,
+.fa-instagram,
+.fa-twitter,
+.fa-linkedin-in {
+  transition: all ease-in-out 1.5s;
+}
+.fa-dribbble:hover,
+.fa-instagram:hover {
+  cursor: pointer;
+  background-color: #4158d0;
+  background-image: linear-gradient(
+    43deg,
+    #4158d0 0%,
+    #c850c0 46%,
+    #ffcc70 100%
+  );
+}
+
+.fa-twitter:hover,
+.fa-linkedin-in:hover {
+  cursor: pointer;
+  background-color: #0093e9;
+  background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
+}
 
 /* main body */
 
-#main{
-    max-width: 70%;
-    margin: auto;
-    display:flex;
-    gap:1rem;   
-    justify-content: space-between;
-    align-items: start;
-    flex-wrap:wrap;
-
+#main {
+  max-width: 70%;
+  margin: auto;
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  align-items: start;
+  flex-wrap: wrap;
 }
-.container{
-    height: 49%;
-    width: 49%;
-    border-radius: 35px;
-    overflow: hidden;
-
+.container {
+  height: 49%;
+  width: 49%;
+  border-radius: 35px;
+  overflow: hidden;
 }
-#main .container a img{
-    height:100%;
-    width:100%;
-    border-radius: 35px;
-    object-fit: cover;
-    transition: all ease-in-out 1s;
-
+#main .container a img {
+  height: 100%;
+  width: 100%;
+  border-radius: 35px;
+  object-fit: cover;
+  transition: all ease-in-out 1s;
 }
 
-#main .container:hover a img{
-    transform: scale(1.08);
-
+#main .container:hover a img {
+  transform: scale(1.08);
 }
 
 /* footer */
 
-#footer{
-    width: 70%;
-    margin:2rem auto 1rem;
-    background-image: url(images/WhatsApp\ Image\ 2023-07-27\ at\ 7.08.53\ PM.jpeg) ; 
-    background-size: cover;
-    border-radius: 35px;
-    padding:2rem;
+#footer {
+  width: 70%;
+  margin: 2rem auto 1rem;
+  background-image: url(images/WhatsApp\ Image\ 2023-07-27\ at\ 7.08.53\ PM.jpeg);
+  background-size: cover;
+  border-radius: 35px;
+  padding: 2rem;
 }
-#footer h1{
-    margin: 5px auto;
-
+#footer h1 {
+  margin: 5px auto;
 }
-#footer p{
-    margin: 5px auto;
-}
-
-
-#footer a{
-
-    
-    margin: 1rem auto;
-    font-size: 1rem;
-    color: black;
-
+#footer p {
+  margin: 5px auto;
 }
 
-#social-media a{
-    
-    display: block;
-    margin:0;
-   
+#footer a {
+  margin: 1rem auto;
+  font-size: 1rem;
+  color: black;
 }
 
-
-#dribbble , #insta , #twitter ,#linkedin {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#social-media a {
+  display: block;
+  margin: 0;
 }
 
-
-
-a{
-    text-decoration: none;
-    color: black;
+#dribbble,
+#insta,
+#twitter,
+#linkedin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.hidden{
-    opacity: 0;
-    transition: all 2s;
-}
-.show{
-    opacity: 1;
+a {
+  text-decoration: none;
+  color: black;
 }
 
-.navigation{
-    transform: translateY(-100%);
+.hidden {
+  opacity: 0;
+  transition: all 2s;
+}
+.show {
+  opacity: 1;
+}
 
+.navigation {
+  transform: translateY(-100%);
 }
-.about ,.container{
-    transform: scale(0.5);
-    transition: all 2s;
+.about,
+.container {
+  transform: scale(0.5);
+  transition: all 2s;
 }
-.trshow{
-    opacity: 1;
-    transform: scale(1);
+.trshow {
+  opacity: 1;
+  transform: scale(1);
 }
 
 @media (prefers-reduce-motion) {
-    .hidden , .trshow{
-        transition: none;
-    }
-    
+  .hidden,
+  .trshow {
+    transition: none;
+  }
 }
 
+.manue,
+.cross {
+  display: none;
+}
+@media (max-width: 720px) {
+  /* header section */
+
+  #header {
+    max-width: 100vh;
+    margin: 0.7rem;
+  }
+
+  .cross {
+    position: absolute;
+    
+  }
+  
+   
+  ul {
+    display: block;
+    background-color: #4158d0;
+    height: 100vh;
+    width:220px;
+    position: fixed;
+    top: 0;
+    right: 0;
+  }
+  
+
+  .profile {
+    display: block;
+
+    margin: 3rem auto;
+    gap: 1rem;
+  }
+  .profilephoto {
+    height: 20rem;
+    width: 90%;
+    margin: 1rem auto;
+    border-radius: 35px;
+    overflow: hidden;
+  }
+  .profilephoto img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+
+    border-radius: 35px;
+  }
+
+  .about {
+    /* background-image: url(images/WhatsApp\ Image\ 2023-07-27\ at\ 7.08.53\ PM.jpeg) ;  */
+
+    /* background-size: cover; */
+
+    min-height: 0;
+    height: 25rem;
+    margin: 1rem auto;
+   
+  }
+  h1 {
+    font-size: 2rem;
+    line-height: 2.3rem;
+    margin: 0.5rem;
+  }
+  p {
+    font-size: 1rem;
+    margin: 0.5rem;
+    line-height: 1.5rem;
+  }
+
+  .content {
+    padding: 1rem;
+  }
+
+  .social-media {
+    margin: 4rem auto 0rem auto;
+    
+    gap: 1rem;
+   
+  }
+
+  .contact {
+    border-radius: 40px;
+    min-height: 40px;
+    width: 100px;
+    font-size: 0.7rem;
+    
+  }
+  .contact:hover {
+    background-color: rgb(18, 18, 18);
+    cursor: pointer;
+  }
+
+  .fa-brands {
+    font-size: 1rem;
+    border-radius: 100%;
+    height: 30px;
+    width: 30px;
+ 
+  }
+  
+  
+
+
+  /* main body */
+
+  #main {
+    max-width: 100%;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    align-items: start;
+    flex-wrap: wrap;
+  }
+  .container {
+    height: 100%;
+    width: 100%;
+    border-radius: 35px;
+    overflow: hidden;
+  }
+  #main .container a img {
+    height: 100%;
+    width: 100%;
+   
+  }
+
+  
+
+  /* footer */
+
+  #footer {
+    width: 90%;
+    margin: 2rem auto 1rem;
+    background-image: url(images/WhatsApp\ Image\ 2023-07-27\ at\ 7.08.53\ PM.jpeg);
+    background-size: cover;
+    border-radius: 35px;
+    padding: 1rem;
+  }
+
+}

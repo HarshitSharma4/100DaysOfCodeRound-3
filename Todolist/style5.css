@@ -5,20 +5,41 @@
     font-family: 'Lato', sans-serif;
 }
 body {
-    background: url(../images/list-chill.jpg);
+    background: url(list-chill.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
     height: 100vh;
     display:flex;
-    justify-content: center;
+    justify-content:baseline;
     align-items: center;
     flex-direction: column;
 }
+.intro{
+    margin: 3rem auto;
+    display: flex;
+    justify-content:left;
+    align-items: center;
+}
+
+
 
 input[type="text"]{
     font-size: 1.5rem;
+}
+#Name{
+   margin: 1rem auto;
+   background-color: transparent;
+   font-size: 2rem;
+   font-weight: bold;
+   color: black;
+   border: none;
+   outline: none;
+}
+#Name:hover , #Name:focus{
+    border: 0;
+    outline: none;
 }
 
 .takeinput{

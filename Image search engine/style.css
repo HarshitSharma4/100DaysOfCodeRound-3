@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+body{
+    background-color: #39297b;
+    /* background-color: rgb(43, 41, 41); */
+    color: #fff;
+    
+
+}
+.darkmode{
+    font-size: 3rem;
+    position: fixed;
+    top:2rem;
+    right: 2rem;
+}
+
+
+
+h1{
+    text-align: center;
+    font-weight: 600;
+    margin:4rem auto;
+
+}
+form{
+    width:90%;
+    /* background-color: rgb(59, 57, 57); */
+    background-color: #434989;
+    margin:auto;
+    height: 80px;
+    max-width: 600px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    display: flex;
+
+}
+#search {
+    height: 80px;
+   
+    background-color:transparent;
+
+    border-radius: 10px;
+    border: none;
+    outline:none;
+    flex-basis: 75%;
+    color: #fff;
+    padding:1.5rem;
+    font-size: 1.2rem;
+
+
+}
+#search::placeholder{
+    color: #fff;
+    font-weight: 600;
+}
+#submit{
+    background-color: rgb(246, 43, 43);
+    height: 100%;
+    flex-basis: 25%;
+    color: #fff;
+    font-size: 1.3rem;
+    border-top-right-radius:10px;
+    border-bottom-right-radius: 10px;
+    border: none;
+    outline: none;
+
+}
+#submit:hover,#submit:focus{
+    cursor:pointer;
+    background-color: rgb(243, 14, 14);
+    
+}
+
+#search-result{
+    width:80%;
+    margin: 1rem auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap:40px;
+
+}
+
+#search-result img{
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    transition: all ease-in-out 0.5s;
+}
+#search-result img:hover{
+    transform: scale(1.05);
+    box-shadow: rgb(36, 26, 26) 0px 10px 10px 0px;
+}
+
+#show-more{
+    height:50px;
+    width:220px;
+    margin:4rem auto;
+    display: block;
+    color:#fff;
+    background-color: rgb(246, 43, 43);
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.3rem;
+    display: none;
+}
+#show-more:hover{
+    cursor:pointer;
+    background-color: rgb(243, 14, 14);
+    transform: scale(1);
+    box-shadow: rgb(36, 26, 26) 0px 5px 5px 0px;
+   
+}
+
+@media (max-width:900px) {
+    #search-result{
+        
+        grid-template-columns: 1fr 1fr;
+    
+    
+    }
+}
+@media (max-width:600px) {
+    #search-result{
+        
+        grid-template-columns: 1fr;
+    
+    
+    }
+    .darkmode{
+        display: none;
+    }
+}
+

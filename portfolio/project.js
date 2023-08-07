@@ -40,7 +40,7 @@ function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
   
-  async function LaodingAnimation() {
+async function LaodingAnimation() {
     await sleep(200);
     navigation.classList.add('trshow');
     await sleep(2000);
@@ -75,4 +75,14 @@ right.addEventListener("mouseleave",(e) =>{
 
     
 
+})
+
+
+const manue = document.querySelector('.manue');
+const cross = document.querySelector('.cross');
+const navOption = document.querySelector('.nav-option');
+
+manue.addEventListener('click',()=>{
+    manue.style.display = 'none';
+    cross.style.display = 'block';
 })

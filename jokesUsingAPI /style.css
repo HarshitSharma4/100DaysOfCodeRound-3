@@ -1,0 +1,73 @@
+body {
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  background-color: #f5c411;
+}
+body .joke-container {
+  padding: 4rem;
+  width: 55%;
+  height: 450px;
+  background-color: #d8f3fd;
+  border-radius: 15px;
+  position: relative;
+}
+body .joke-container .untitle {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background-color: transparent;
+}
+body .joke-container .joke {
+  margin: 1.5rem auto;
+  padding: 1rem;
+  color: #2f2b1e;
+  text-align: center;
+}
+body .joke-container .joke h2 {
+  font-size: calc(max-width - 3rem);
+}
+body .joke-container .joke h3 {
+  font-size: 2.3rem;
+}
+@media screen and (max-width: 1204px) {
+  body .joke-container .joke h2 {
+    font-size: 1.5rem;
+  }
+  body .joke-container .joke h3 {
+    font-size: 1rem;
+  }
+}
+body .joke-container .btn {
+  position: absolute;
+  right: 50%;
+  bottom: 50px;
+  transform: translateX(50%);
+  height: 70px;
+  width: 250px;
+  font-size: 1.5rem;
+  border-radius: 15px;
+  outline: none;
+  background-color: black;
+  color: azure;
+  transition: linear 0.5s;
+}
+body .joke-container .btn:hover {
+  background-color: azure;
+  color: black;
+  border: solid 5px black;
+}
+@media screen and (max-width: 1220px) {
+  body .joke-container .btn {
+    height: 50px;
+    width: 150px;
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 1220px) {
+  body .joke-container {
+    width: 100%;
+    height: 250px;
+  }
+}/*# sourceMappingURL=style.css.map */

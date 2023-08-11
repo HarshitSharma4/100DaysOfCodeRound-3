@@ -1,0 +1,264 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  color: #050416;
+}
+
+#header {
+  background-color: #0c032b;
+  color: #fefefe;
+  padding: 1rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+.item {
+  color: #fefefe;
+}
+.item:hover {
+  color: #0093e9;
+}
+
+#information {
+  padding: 3rem;
+  display: flex;
+  flex-direction: row;
+}
+#information #intro {
+  margin-top: 0.5rem;
+  flex-basis: 70%;
+}
+
+#heading h1 {
+  font-size: 4.5rem;
+  font-weight: 1000;
+  margin: 0.5em auto;
+}
+#heading .bank {
+  color: #0093e9;
+}
+
+#introImage {
+  height: 550px;
+  width: 550px;
+}
+#introImage img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#login {
+  outline: none;
+  border: none;
+  height: 50px;
+  padding: 0.5rem;
+  border-radius: 10px;
+  background-color: #0c032b;
+  border: 3px solid #0093e9;
+  color: #0093e9;
+  width: 100px;
+}
+#login:hover {
+  color: #fefefe;
+  background-color: #0093e9;
+  background-image: linear-gradient(90deg, #0093e9 0%, #80d0c7 100%);
+}
+
+#signup {
+  outline: none;
+  border: none;
+  height: 50px;
+  padding: 0.5rem;
+  border-radius: 10px;
+  background-color: #0093e9;
+  background-image: linear-gradient(90deg, #0093e9 0%, #80d0c7 100%);
+  width: 100px;
+}
+#signup:hover {
+  background-color: #0c032b;
+  border: 3px solid #0093e9;
+  background-image: none;
+}
+
+.grad {
+  outline: none;
+  border: none;
+  height: 50px;
+  padding: 0.5rem;
+  border-radius: 10px;
+  background-color: #0093e9;
+  background-image: linear-gradient(90deg, #0093e9 0%, #80d0c7 100%);
+  width: 250px;
+  font-size: 1.5rem;
+  color: #fefefe;
+  display: block;
+  margin-right: 50px;
+}
+.grad:hover {
+  background-color: #0c032b;
+  background-image: none;
+  border: 3px solid #0093e9;
+  padding: 0;
+  color: #0093e9;
+}
+
+.get-start {
+  display: flex;
+  align-items: center;
+}
+
+#logos {
+  padding: 3rem 1rem;
+  margin: 0 auto;
+  background-color: #eed6d2;
+}
+#logos .row {
+  gap: 1rem;
+}
+#logos .row .col {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+#logos .row .col i {
+  font-size: 1.8rem;
+  margin-right: 0.5rem;
+}
+#logos .row .col h3 {
+  margin-bottom: 0px;
+  font-weight: 600;
+}
+
+#card {
+  margin: 5rem auto;
+}
+#card .card {
+  width: 350px;
+  border: none;
+  outline: none;
+  text-align: center;
+  border-radius: 20px;
+  margin: auto;
+}
+#card .card .card-header {
+  background-color: #fefefe;
+  font-size: 2rem;
+  font-weight: 900;
+  padding: 1rem 1rem 0;
+}
+
+.bg1,
+.bg2,
+.bg3 {
+  width: 330px;
+  height: 330px;
+  border-radius: 20px;
+}
+
+.bg1 {
+  background-color: #eed6d2;
+}
+
+.bg2 {
+  background-color: #92c2c9;
+}
+
+.bg3 {
+  background-color: #9288d3;
+}
+
+#benifit {
+  background-color: #0c032b;
+  color: #fefefe;
+  margin: 2rem auto 0;
+  padding: 5rem;
+}
+#benifit h3 {
+  font-size: 1.7rem;
+}
+#benifit h3::before {
+  content: "|";
+  height: 100%;
+  width: 10px;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+#benifit .container {
+  margin: 4rem 0;
+  padding: 0;
+}
+#benifit .container .row {
+  gap: 1rem;
+  justify-content: space-between;
+}
+#benifit .container .card {
+  text-align: left;
+  background-color: #0c032b;
+  width: 350px;
+}
+#benifit .container .card i {
+  font-size: 2rem;
+  padding: 1rem;
+}
+#benifit .container .card h2 {
+  font-size: 1.5rem;
+}
+#benifit .container .card p {
+  font-size: 1rem;
+}
+#benifit .container .card .card-header {
+  padding: 1rem 1rem 0 1rem;
+}
+#benifit .container .card .card-body {
+  padding: 0 1rem;
+}
+
+#about {
+  background-color: #eed6d2;
+  padding: 2rem 0;
+}
+#about .container {
+  padding: 3rem 0;
+}
+#about .container .intro {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+}
+#about .container h1 {
+  font-size: 2.3rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+}
+#about .container p {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin: 1rem 0;
+}
+#about .container .grad {
+  font-size: 1.1rem;
+  width: 175px;
+  margin: 1rem 0;
+}
+#about .container img {
+  height: 33rem;
+}
+
+#testimoial {
+  color: #0093e9;
+}
+#testimoial .cl-c {
+  color: #030121;
+  font-size: 4rem;
+}
+#testimoial .cl-c:hover {
+  color: #1f0386;
+}/*# sourceMappingURL=style.css.map */

@@ -246,20 +246,62 @@ body {
       width: 175px;
       margin: 1rem 0;
     }
-    img{
+    img {
       height: 33rem;
     }
   }
 }
 
-#testimoial{
-  color: #0093e9;
- 
-  .cl-c{
-     color: $PrimaryColor;
-     font-size: 4rem;
-     &:hover{
-      color:#1f0386;
-     }
+#testimoial {
+  .container {
+    margin: 5rem auto;
+  }
+  color: $PrimaryColor;
+  .row {
+    align-items: center;
+    justify-content: center;
+    h1 {
+      font-size: 4rem;
+    }
+  }
+
+  .cl-c {
+    color: $PrimaryColor;
+    font-size: 4rem;
+    &:hover {
+      color: #1f0386;
+    }
+  }
+  .testimoial {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    .test-img {
+      height: 120px;
+      width: 120px;
+      border-radius: 100%;
+    }
+  }
+  .customer {
+    color: #fcf0ff;
+    margin: 0 5rem;
+    background-color: $PrimaryColor;
+    border-radius: 10px;
+    padding: 3rem;
+    h3 {
+      margin: 0.5rem 0;
+      font-size: 1rem;
+    }
+  }
+}
+
+footer {
+  background-color: $PrimaryColor;
+  text-align: center;
+  color: $fivthColor;
+  p {
+    margin-bottom: 0;
+    padding: 1rem 0;
   }
 }

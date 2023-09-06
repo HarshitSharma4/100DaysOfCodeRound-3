@@ -1,0 +1,44 @@
+.github {
+  padding: 0rem 3rem;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.5rem;
+}
+.logo {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 1rem;
+}
+.main {
+  display: flex;
+  align-items: center;
+  height: 550px;
+}
+.repo {
+  flex-basis: 50%;
+}
+input {
+  width: 80%;
+  height: 20px;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+  outline: none;
+}
+.footer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.result {
+  padding-left: 2rem;
+}
+.result img {
+  height: 250px;
+  width: 250px;
+  border-radius: 15px;
+}

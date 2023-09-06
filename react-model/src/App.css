@@ -1,0 +1,365 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&family=Poppins&display=swap");
+
+.App {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.App-header {
+  margin: 7rem auto;
+  font-size: 2rem;
+}
+
+.open-btn,
+.cancel {
+  font-size: 1.8rem;
+  padding: 0.7rem;
+  color: #fff;
+  background-color: rgb(0, 38, 255);
+  border-radius: 5px;
+  outline: none;
+  box-shadow: none;
+  width: 200px;
+}
+.open-btn:hover,
+.cancel:hover {
+  background-color: #fff;
+  color: rgb(0, 38, 255);
+  cursor: pointer;
+  border: 3px solid rgb(0, 38, 255);
+}
+
+.Model {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: gray;
+  display: grid;
+  place-items: center;
+}
+.contaner {
+  width: 63%;
+  height: 63%;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 5px 5px 30px black;
+  padding: 1rem;
+}
+
+.cancel-X {
+  font-size: 3rem;
+  position: relative;
+  top: 0;
+  right: -48.5%;
+  background-color: #fff;
+  outline: none;
+  border: none;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-evenly;
+}
+.continue {
+  font-size: 1.8rem;
+  padding: 0.7rem;
+  background-color: #fff;
+  color: rgb(0, 38, 255);
+
+  border: 3px solid rgb(0, 38, 255);
+  border-radius: 5px;
+  outline: none;
+  box-shadow: none;
+  width: 200px;
+}
+.continue:hover {
+  color: #fff;
+  background-color: rgb(0, 38, 255);
+  cursor: pointer;
+}
+.Card {
+  width: 350px;
+  height: 500px;
+  position: relative;
+  border-radius: 7px;
+  overflow: hidden;
+}
+
+.image img {
+  width: 350px;
+  height: 500px;
+  object-fit: cover;
+}
+.container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 30%;
+  width: 100%;
+  overflow: visible;
+  text-align: left;
+  color: #fff;
+}
+.icon {
+  padding: 0.7rem;
+  border-radius: 100%;
+  height: 30px;
+  width: 30px;
+  color: #fff;
+  box-shadow: 1px 1px 0px black;
+  position: absolute;
+  top: -20px;
+  left: 5px;
+  z-index: 1;
+}
+.title h1 {
+  font-size: 2.5rem;
+  margin: 1rem 0;
+  padding: 1rem;
+}
+.body p {
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  padding: 1rem;
+}
+.Footer button {
+  outline: none;
+  border: solid 2px #fff;
+  font-size: 1.2rem;
+  padding: 0.5rem;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 20px;
+  color: #fff;
+  width: 130px;
+  background-color: transparent;
+}
+.Footer button:hover {
+  color: black;
+  background-color: #fff;
+}
+.card-container {
+  display: flex;
+  width: 90%;
+  margin: 10rem auto;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 1rem;
+  flex-direction: row;
+}
+.nav-bar {
+  background-color: #864acf;
+  color: #fff;
+}
+.nav {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  height: 80px;
+}
+.logo img {
+  height: 80px;
+  width: 250px;
+  object-fit: cover;
+}
+.nav-list-lg a {
+  color: #fff;
+  font-size: 1.5rem;
+  margin: auto 1.5rem;
+  text-decoration: none;
+  cursor: pointer;
+}
+.bar {
+  display: none;
+}
+.nav-list-sm {
+  margin: 0.5rem;
+  border-top: 3px solid #fff;
+}
+.nav-list-sm a {
+  display: block;
+  font-size: 1.5rem;
+  text-decoration: none;
+  margin: 1rem;
+  flex-basis: 100%;
+  color: #fff;
+  cursor: pointer;
+}
+@media (max-width: 700px) {
+  .nav-list-lg {
+    display: none;
+  }
+  .bar,
+  .cencel {
+    display: block;
+    margin: auto 1.5rem;
+    font-size: 2.4rem;
+    background-color: #864acf;
+    border: none;
+    outline: none;
+  }
+}
+
+.carousel {
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  position: relative;
+}
+.carousel-img {
+  width: 75%;
+  height: 75%;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+.carousel-img img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  position: relative;
+  z-index: -1;
+}
+.intro {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  padding: 1rem 2rem;
+  color: #1b1e27;
+  text-align: left;
+}
+.intro h1 {
+  font-size: 2.1rem;
+  font-weight: 1000;
+}
+.intro p {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.indicator {
+  position: absolute;
+  z-index: 3;
+  bottom: 135px;
+  left: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 110px;
+  transform: translateX(-50%);
+}
+.indctr {
+  width: 15px;
+  height: 15px;
+  background-color: #e9e9e9;
+  border-radius: 100%;
+  filter: drop-shadow(0px 0px 10px #000000);
+}
+.indctr:hover {
+  cursor: pointer;
+}
+.right-icon,
+.left-icon {
+  position: absolute;
+  font-size: 3.5rem;
+  color: rgb(88, 88, 88);
+
+  padding: 1rem;
+  border-radius: 15px;
+}
+.right-icon:hover,
+.left-icon:hover {
+  color: #000000;
+  background-color: #e9e9e9;
+  cursor: pointer;
+}
+.left-icon {
+  left: 3.5rem;
+}
+.right-icon {
+  right: 3.5rem;
+}
+.imageGallary {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin: 3rem 1rem;
+}
+.images {
+  height: 450px;
+  width: 450px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.images:hover {
+  box-shadow: 5px 7px 10px #000000;
+}
+.images img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.bigScren {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #68749398;
+}
+.crossImage {
+  background-color: rgb(93, 92, 92);
+  outline: none;
+  border: none;
+  height: 40px;
+  width: 40px;
+  border-radius: 100%;
+  font-size: 1.5rem;
+  position: absolute;
+  right: 180px;
+  top: 80px;
+  z-index: 12;
+}
+.galary {
+  overflow: hidden;
+  position: relative;
+}
+.Home h1 {
+  font-size: 3rem;
+  margin: 3rem auto;
+}
+.Home p {
+  margin: 1rem 4rem;
+  font-size: 1.5rem;
+  line-height: 3rem;
+}
+.Home .show-more {
+  padding: 0.7rem;
+  height: 50px;
+  width: 150px;
+  font-size: 1.1rem;
+  outline: none;
+  border: 3px solid crimson;
+  color: crimson;
+  border-radius: 10px;
+}
+.Home .show-more:hover {
+  color: #fff;
+  background-color: crimson;
+}

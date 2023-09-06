@@ -1,0 +1,151 @@
+#background-weather {
+  background-image: linear-gradient(
+      rgba(101, 120, 224, 0.1),
+      rgba(96, 94, 116, 0.6)
+    ),
+    url("../assets/backgroundImage/Rain.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+#weather {
+  display: flex;
+  align-items: end;
+  justify-content: left;
+  height: 550px;
+  width: 800px;
+  flex-basis: 70%;
+  font-size: 1.5rem;
+}
+#weather > h1,
+img,
+p,
+div {
+  display: inline;
+  margin: 10px;
+}
+
+#weather-image {
+  height: 10rem;
+  width: 10rem;
+  position: relative;
+  top: 20px;
+}
+#temprature {
+  font-size: 5rem;
+}
+#location {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  bottom: 2px;
+}
+
+#information {
+  background-color: rgba(2, 2, 2, 0.4);
+  margin: 0;
+  padding: 2rem;
+  position: relative;
+}
+#search {
+  position: absolute;
+  height: 5rem;
+  width: 5rem;
+  top: 0;
+  right: 0;
+  font-size: 3rem;
+  background-color: var(--rain);
+}
+#city {
+  border: 0;
+  outline: 0;
+  font-size: 1rem;
+  color: var(--subtextColor);
+
+  background-color: transparent;
+}
+.cloud,
+.humadity,
+.wind,
+.rain {
+  display: flex;
+  justify-content: space-between;
+}
+.cloud h3 {
+  margin-right: 0;
+}
+
+.jaipur,
+.bangalore,
+.mumbai,
+.goa {
+  padding: 7px 0;
+  cursor: context-menu;
+}
+.select {
+  background-color: #3b3c44;
+}
+.isopen {
+  display: none;
+}
+@media only screen and (max-width: 1000px) {
+  #background-weather {
+    overflow: hidden;
+    display: block;
+    text-align: center;
+    margin: 0;
+  }
+  .search {
+    display: none;
+  }
+  #weather {
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+
+    margin: 0;
+    height: 100%;
+    width: 100%;
+  }
+  #information {
+    background-color: transparent;
+  }
+  .isopen {
+    display: block;
+    background: transparent;
+    position: fixed;
+    top: 30px;
+    right: 30px;
+  }
+  .st-btn {
+    font-size: 2rem;
+    font-size: 2rem;
+    background: #0c481e9e;
+    outline: none;
+    border: none;
+    border-radius: 100%;
+    padding: 1rem;
+  }
+  .st-btn:hover {
+    cursor: pointer;
+    background-color: #0c481ee0;
+  }
+  .isopen input {
+    height: 71px;
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #fff;
+    background-color: #0c481e9e;
+    margin-right: 20px;
+    border-radius: 25px;
+    outline: none;
+    border: none;
+  }
+}

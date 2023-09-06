@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&family=Poppins&display=swap");
+
+:root {
+  --primary: #0d0202;
+  --secondary: #ac1b1b;
+  --card: #ac1b1b97;
+  --tristory: #f6fefe;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", "Lato", "Montserrat", sans-serif;
+  color: var(--tristory);
+}
+a {
+  text-decoration: none;
+}
+
+#root {
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  background-color: #7f8fa0;
+}

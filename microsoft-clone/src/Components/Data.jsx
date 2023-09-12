@@ -9,8 +9,13 @@ import surfaceLaptop from "../assets/Surface-Laptop.webp";
 import cardContent from "../assets/Content-Card.avif";
 import gldnXsx from "../assets/gldn-XSX.webp";
 import gldnXss from "../assets/gldn-XSS-CP.webp";
-import HiglightImg from "../assets/Hidglight.avif";
+import HiglightImg from "../assets/Highlight.avif";
+import surfaceBusiness from "../assets/SurfaceForBusiness.avif";
+import windowsBusiness from "../assets/Windows-11-Business.jpeg";
+import JIC from "../assets/JIC-DPS.webp";
+import BusinessWomen from "../assets/Business-Woman.webp";
 
+import Xicon from "../assets/iconX.webp";
 export const Logo = { Img: LogoImg };
 export const Higlight = {
   img: HiglightImg,
@@ -63,7 +68,7 @@ export const Microsoft = [
   },
 ];
 
-export const CardFirst = [
+export const CardFirstHomeSection = [
   {
     img: surfaceLaptop,
     alt: "Surface Laptop Studio with keyboard attached, propped on kickstand.",
@@ -117,3 +122,56 @@ export const CardFirst = [
     ],
   },
 ];
+
+export const CardSecondHomeSection = [
+  {
+    img: surfaceBusiness,
+    alt: "Surface Laptop Go plugged in to a Surface dock and an external monitor",
+    title: `Surface for Business`,
+    body: `No matter what you do, there’s a Surface to help you do it.`,
+    button: [
+      {
+        text: `Shop now`,
+        link: "",
+      },
+    ],
+  },
+  {
+    img: BusinessWomen,
+    alt: "A woman sips a cup of tea and participates in a Microsoft Teams call with her co-workers.",
+    title: `Try Microsoft 365 for free`,
+    body: `Get Microsoft Teams, secure cloud storage and premium apps across devices with a free one-month Microsoft 365 Business Standard trial.  `,
+    button: [
+      {
+        text: `Start your free trial`,
+        link: "",
+      },
+    ],
+  },
+  {
+    img: windowsBusiness,
+    alt: "A laptop running Windows 11.",
+    title: `Windows 11 for business`,
+    body: `Designed for hybrid work. Powerful for employees. Consistent for IT. Secure for all.`,
+    button: [
+      {
+        text: `Learn more`,
+        link: "",
+      },
+    ],
+  },
+  {
+    img: JIC,
+    alt: "A woman at home accessing Windows 365 Cloud services",
+    title: `Welcome to your Windows 365 Cloud PC`,
+    body: `Securely stream your Windows experience from the Microsoft cloud to any device.`,
+    button: [
+      {
+        text: `Get it today `,
+        link: "",
+      },
+    ],
+  },
+];
+
+export const Xmark = { Xicon };

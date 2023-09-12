@@ -6,11 +6,15 @@ const CardHome = (props) => {
     return <></>;
   }
   return (
-    <div className="Card h-96 w-80">
-      <div className="img">
-        <img src={CardData?.img} alt={CardData?.alt} />
+    <div className="Card ">
+      <div className="img h-[100%] w-[100%]">
+        <img
+          src={CardData?.img}
+          className="h-[100%] w-[100%] object-cover"
+          alt={CardData?.alt}
+        />
       </div>
-      <div className="content">
+      <div className="content ">
         <div className="title text-3xl my-4 font-semibold">
           {CardData?.title}
         </div>

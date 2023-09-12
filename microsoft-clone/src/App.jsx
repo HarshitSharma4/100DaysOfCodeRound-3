@@ -12,6 +12,7 @@ function App() {
         <Route path="/Xbox" element={<WorkInProgress />}></Route>
         <Route path="/Support" element={<WorkInProgress />}></Route>
         <Route path="/Sign In" element={<WorkInProgress />}></Route>
+        <Route path="/*" element={<WorkInProgress />}></Route>
       </Routes>
     </Router>
   );

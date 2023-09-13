@@ -24,7 +24,7 @@ const Carousel = () => {
   return (
     <div className="Carosel">
       <div
-        className="block m-auto md:flex bg-gray-100 md:items-center justify-center"
+        className="block m-auto md:flex bg-[#f2f2f2] md:items-center justify-center"
         style={currentIndex & 1 ? {} : { flexDirection: "row-reverse" }}
       >
         <div className="Image  basis-1/2 object-cover overflow-hidden">

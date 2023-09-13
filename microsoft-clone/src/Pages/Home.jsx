@@ -1,5 +1,6 @@
 import Navigation from "../Components/NavigationHome";
 import Carousel from "../Components/CarouselHome";
+import GotoTop from "../Components/GotoTop";
 import {
   Microsoft,
   CardFirstHomeSection,
@@ -9,6 +10,7 @@ import CardHome from "../Components/CardHome";
 import { Higlight } from "../Components/Data";
 import { BiLogoFacebook, BiLogoYoutube } from "react-icons/bi";
 import { Xmark } from "../Components/Data";
+import Footer from "../Components/Footer";
 const Home = () => {
   return (
     <>
@@ -41,6 +43,7 @@ const Home = () => {
             </div>
           );
         })}
+        <GotoTop />
       </div>
       <div className="highlight grid grid-cols-1 w-[90%] m-auto lg:relative">
         <div className="img  overflow-hidden m-auto ">
@@ -95,6 +98,8 @@ const Home = () => {
           <BiLogoYoutube className="text-4xl -translate-y-1" />
         </a>
       </div>
+
+      <Footer />
     </>
   );
 };

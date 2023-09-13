@@ -14,7 +14,6 @@ import surfaceBusiness from "../assets/SurfaceForBusiness.avif";
 import windowsBusiness from "../assets/Windows-11-Business.jpeg";
 import JIC from "../assets/JIC-DPS.webp";
 import BusinessWomen from "../assets/Business-Woman.webp";
-
 import Xicon from "../assets/iconX.webp";
 export const Logo = { Img: LogoImg };
 export const Higlight = {
@@ -175,3 +174,192 @@ export const CardSecondHomeSection = [
 ];
 
 export const Xmark = { Xicon };
+
+export const FooterData = [{
+  title: `What's new`,
+  subtitle: [{
+    text: `Microsoft 365`,
+    link: ``
+  }, {
+    text: `Games`,
+    link: ``
+  }, {
+    text: `Surface Pro 9`,
+    link: ``
+  }, {
+    text: `Surface Laptop 5`,
+    link: ``
+  }, {
+    text: `Surface Laptop Studio`,
+    link: ``
+  }, {
+    text: `Surface Laptop Go 2`,
+    link: ``
+  }, {
+    text: ` Windows 11 apps`,
+    link: ``
+  }]
+}, {
+  title: `Microsoft Store`,
+  subtitle: [{
+    text: `Account profile`,
+    link: ``
+  }, {
+    text: `Games`,
+    link: ``
+  }, {
+    text: `Download Center`,
+    link: ``
+  }, {
+    text: `Microsoft Store Support`,
+    link: ``
+  }, {
+    text: `Returns`,
+    link: ``
+  }, {
+    text: `Order tracking`,
+    link: ``
+  }]
+}, {
+  title: `Education`,
+  subtitle: [{
+    text: `Microsoft in education`,
+    link: ``
+  }, {
+    text: `Devices for education`,
+    link: ``
+  }, {
+    text: `Microsoft Teams for Education`,
+    link: ``
+  }, {
+    text: `Microsoft 365 Education`,
+    link: ``
+  }, {
+    text: `Office Education`,
+    link: ``
+  }, {
+    text: `Educator training and development`,
+    link: ``
+  }, {
+    text: `Deals for students and parents`,
+    link: ``
+  }, {
+    text: `Azure for students`,
+    link: ``
+  }]
+}, {
+  title: `Business`,
+  subtitle: [{
+    text: `Microsoft Cloud`,
+    link: ``
+  }, {
+    text: `Microsoft Security`,
+    link: ``
+  }, {
+    text: `Azure`,
+    link: ``
+  }, {
+    text: `Dynamics 365`,
+    link: ``
+  }, {
+    text: `Microsoft 365`,
+    link: ``
+  }, {
+    text: `Microsoft Advertising`,
+    link: ``
+  }, {
+    text: `Microsoft Industry`,
+    link: ``
+  }, {
+    text: `Microsoft Teams`,
+    link: ``
+  }]
+}, {
+  title: `Developer & IT`,
+  subtitle: [{
+    text: `Developer Center`,
+    link: ``
+  }, {
+    text: `Documentation`,
+    link: ``
+  }, {
+    text: `Microsoft Learn`,
+    link: ``
+  }, {
+    text: `Microsoft Tech Community`,
+    link: ``
+  }, {
+    text: `Azure Marketplace`,
+    link: ``
+  }, {
+    text: `AppSource`,
+    link: ``
+  }, {
+    text: `Microsoft Power Platform`,
+    link: ``
+  }, {
+    text: `Visual Studio`,
+    link: ``
+  }]
+}, {
+  title: `Company`,
+  subtitle: [{
+    text: `Careers`,
+    link: ``
+  }, {
+    text: `About Microsoft`,
+    link: ``
+  }, {
+    text: `Company news`,
+    link: ``
+  }, {
+    text: `Privacy at Microsoft`,
+    link: ``
+  }, {
+    text: `Sustainability`,
+    link: ``
+  }, {
+    text: `Investors`,
+    link: ``
+  }, {
+    text: `Security`,
+    link: ``
+  }]
+}];
+
+
+export const FooterNav = {
+  location: `English(India)`,
+  Choices: `Your Privacy Choices`,
+  navItem: [{
+    text: ` Contact`,
+    link: ``
+  }, {
+    text: `Microsoft`,
+    link: ``
+  }, {
+    text: `Privacy`,
+    link: ``
+  }, {
+    text: `Terms of use`,
+    link: ``
+  }, {
+    text: `Trademarks`,
+    link: ``
+  }, {
+    text: `About`,
+    link: ``
+  }, {
+    text: `Tour ads`,
+    link: ``
+  }],
+  mark: `© Microsoft 2023`
+}
+
+
+
+
+
+
+
+

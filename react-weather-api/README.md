@@ -1,7 +1,8 @@
-Weather App with React and OpenWeatherMap API
+<h1 style="color:#green">Weather App with React and OpenWeatherMap API</h1>
+<img src="/src/assets/Screenshot from 2023-08-24 23-13-30.png" alt=""/>
 
-![![Alt text](<Screenshot from 2023-08-24 23-13-30.png>)](<src/assets/Screenshot from 2023-08-24 23-13-30.png>)
-This is a weather application built using React that fetches real-time weather data from the OpenWeatherMap API. It provides information about the current temperature, wind speed, cloud cover, humidity, and dynamically changes the background image to match the weather condition.
+<p>This is a weather application built using React that fetches real-time weather data from the OpenWeatherMap API. It provides information about the current temperature, wind speed, cloud cover, humidity, and dynamically changes the background image to match the weather condition.</p>
+
 Features
 
     Real-time Weather Data: The app fetches real-time weather data from the OpenWeatherMap API to provide up-to-date weather information.

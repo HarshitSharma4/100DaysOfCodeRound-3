@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { Logo } from "../Components/Data";
+import { Logo, Product } from "../Components/Data";
 import { VscSearch } from "react-icons/vsc";
 import { BiArrowBack } from "react-icons/bi";
 import { AiOutlineShoppingCart } from "react-icons/ai";
@@ -11,6 +11,7 @@ const Navigation = () => {
   const [openBar, setOpenBar] = useState(false);
   const [openSearch, setOpensearch] = useState(false);
   const [searchText, setSearchText] = useState("");
+  const [showProduct, setShowProduct] = useState(false);
   const searchItem = () => {
     alert(searchText);
   };
@@ -95,28 +96,24 @@ const Navigation = () => {
             to="/Windows"
             className="h-7 hover:border-b-2 hover:border-solid hover:border-black"
           >
-            {" "}
             Windows
           </Link>
           <Link
             to="/Surface"
             className="h-7 hover:border-b-2 hover:border-solid hover:border-black"
           >
-            {" "}
             Surface
           </Link>
           <Link
             to="/Xbox"
             className="h-7 hover:border-b-2 hover:border-solid hover:border-black"
           >
-            {" "}
             Xbox
           </Link>
           <Link
             to="/Support"
             className="h-7 hover:border-b-2 hover:border-solid hover:border-black"
           >
-            {" "}
             Support
           </Link>
         </div>
@@ -127,14 +124,36 @@ const Navigation = () => {
             </div>
           </Link>
         </div>
-        <div className=" space-x-3 flex">
-          <div className="hidden lg:flex align-middle space-x-2">
+        <div className=" space-x-3 flex relative">
+          <div
+            className="hidden lg:flex align-middle space-x-2"
+            onClick={() => {
+              setShowProduct(!showProduct);
+            }}
+          >
             <h1 className="hidden lg:block hover:border-b-2 hover:border-solid hover:border-black">
               All Microsoft
             </h1>
             <MdOutlineKeyboardArrowDown className="text-2xl" />
           </div>
-
+          {showProduct && (
+            <div className="absolute bottom-0">
+              {Product.map((value, key) => {
+                return (
+                  <div key={key}>
+                    <h1>{Product.title}</h1>
+                    {value.subtitle.map((value, key) => {
+                      return (
+                        <a href={value.link} key={key}>
+                          {value.text}
+                        </a>
+                      );
+                    })}
+                  </div>
+                );
+              })}
+            </div>
+          )}
           {openSearch ? (
             <div className="hidden absolute bg-gray-50 top-0 left-0 -translate-x-5 w-full h-14 md:flex justify-center align-middle">
               <div className="border-2 h-10 border-blue-400 border-solid flex m-2 w-10/12">
@@ -183,13 +202,13 @@ const Navigation = () => {
             <h1 className="hidden lg:block hover:border-b-2 hover:border-solid hover:border-black">
               Cart
             </h1>
-            <AiOutlineShoppingCart className="text-2xl" />{" "}
+            <AiOutlineShoppingCart className="text-2xl" />
           </Link>
           <Link className="flex align-middle space-x-2" to="/SignIn">
             <h1 className="hidden lg:block hover:border-b-2 hover:border-solid hover:border-black">
               Sing In
             </h1>
-            <CgProfile className="text-3xl" />{" "}
+            <CgProfile className="text-3xl" />
           </Link>
         </div>
       </div>
@@ -214,28 +233,24 @@ const Navigation = () => {
             to="/Windows"
             className="text-2xl h-14 p-3 block border-solid border-b-2 shadow-sm border-gray-400 text-start px-4 bg-gray-300 hover:border-dotted hover:border-2 box-border hover:scale-105"
           >
-            {" "}
             Windows
           </Link>
           <Link
             to="/Surface"
             className="text-2xl h-14 p-3 block border-solid border-b-2 shadow-sm border-gray-400 text-start px-4 bg-gray-300 hover:border-dotted hover:border-2 box-border hover:scale-105"
           >
-            {" "}
             Surface
           </Link>
           <Link
             to="/Xbox"
             className="text-2xl h-14 p-3 block border-solid border-b-2 shadow-sm border-gray-400 text-start px-4 bg-gray-300 hover:border-dotted hover:border-2 box-border hover:scale-105"
           >
-            {" "}
             Xbox
           </Link>
           <Link
             to="/Support"
             className="text-2xl h-14 p-3 block border-solid border-b-2 shadow-sm border-gray-400 text-start px-4 bg-gray-300 hover:border-dotted hover:border-2 box-border hover:scale-105"
           >
-            {" "}
             Support
           </Link>
         </div>

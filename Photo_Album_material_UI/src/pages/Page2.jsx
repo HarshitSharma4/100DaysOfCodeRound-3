@@ -5,6 +5,7 @@ import { featuredPosts } from "../Data/Data";
 import PostCard from "../components/PostCard";
 import MainBar from "../components/MainBar";
 import SideBar from "../components/SideBar";
+import Footer from "../components/Footer";
 
 const Page2 = () => {
   const darkTheme = createTheme({
@@ -34,6 +35,11 @@ const Page2 = () => {
             <SideBar />
           </Grid>
         </Grid>
+
+        <Footer
+          title="Footer"
+          discription="Something here to give the footer a purpose!"
+        />
       </Container>
     </ThemeProvider>
   );

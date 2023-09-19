@@ -7,7 +7,8 @@ const Navigation = () => {
   // Define your tabs and their corresponding routes
   const tabs = [
     { label: "Template 1", path: "/" },
-    { label: "Template 2", path: "/page2" },
+    { label: "Template 2", path: "/template2" },
+    { label: "Template 3", path: "/template3" },
   ];
   const activeTabIndex = tabs.findIndex(
     (tab) => tab.path === location.pathname

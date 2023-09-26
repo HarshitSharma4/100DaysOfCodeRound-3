@@ -6,7 +6,12 @@ const Footer = ({ title, discription }) => {
       maxWidth="lg"
       style={{ padding: "3rem", backgroundColor: "#4947479c" }}
     >
-      <Typography variant="h5" align="center" gutterBottom>
+      <Typography
+        variant="h5"
+        align="center"
+        style={{ color: "#fff" }}
+        gutterBottom
+      >
         {title}
       </Typography>
       <Typography variant="subtitle1" align="center" component="p">

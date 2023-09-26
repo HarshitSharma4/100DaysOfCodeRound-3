@@ -5,6 +5,8 @@ import NavigationBar3 from "../components/NavigationBar3";
 import LeftBar from "../components/LeftBar";
 import RightBar from "../components/RightBar";
 import Feed from "../components/Feed";
+import Footer from "../components/Footer";
+import Add from "../components/Add";
 const darkTheme = createTheme({
   palette: {
     primary: {
@@ -37,6 +39,11 @@ const Page3 = () => {
             <RightBar />
           </Grid>
         </Grid>
+        <Footer
+          title="Footer"
+          discription="Something here to give the footer a purpose!"
+        />
+        <Add />
       </ThemeProvider>
     </>
   );

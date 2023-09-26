@@ -3,7 +3,7 @@ import { leftBar } from "../Data/Template";
 import "../index.css";
 const LeftBar = () => {
   return (
-    <div className="leftBar">
+    <div className="leftBar" style={{ position: "fixed", padding: "2rem 0" }}>
       {leftBar.map((value, key) => (
         <Link
           key={key}

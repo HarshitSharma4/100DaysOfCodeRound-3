@@ -16,7 +16,7 @@ import {
 import "../index.css";
 const NavigationBar3 = () => {
   return (
-    <AppBar position="relative">
+    <AppBar position="fixed">
       <Toolbar
         style={{
           display: "flex",

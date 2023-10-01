@@ -1,17 +1,21 @@
-// import Page1 from "./pages/Page1";
-// import Page2 from "./pages/Page2";
-// import "./index.css";
-// import Navigation from "./components/Navigation";
+import Products from "./Components/Products";
+import "./App.css";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import ProductDetail from "./Components/ProductDetail";
 function App() {
   return (
-    <Router>
-      {/* <Navigation /> */}
-      <Routes>
-        <Route to="/" element={<h1>Home</h1>}></Route>
-        <Route to="/page2" element={<h2>page2</h2>}></Route>
-      </Routes>
-    </Router>
+    <div>
+      <Router>
+        <h1 className="w-full px-9 my-6 text-4xl font-extrabold text-zinc-900 border-b-4 border-gray-400">
+          Fake Shop
+        </h1>
+        <Routes>
+          <Route path="/" exact element={<Products />} />
+          <Route path="/product/:id" element={<ProductDetail />} />
+          <Route>404 product not found</Route>
+        </Routes>
+      </Router>
+    </div>
   );
 }
 

@@ -20,7 +20,7 @@ const Github = () => {
   const apiKey = "https://api.github.com/users/";
   const getUserData = (user) => {
     axios(apiKey + user).then((response) => {
-      console.log(response);
+
       setapiData(response.data);
     });
   };

@@ -1,9 +1,11 @@
 import { useEffect, useState } from "react";
 import { ThemeProvider } from "./Context/Theme";
+import Navigation from "./Components/Navgation/Navigation";
+import Home from "./Pages/Home";
 
 function App() {
-  const [themeMode, setThemeMode] = useState("dark");
-  const [colorTheme, setColorTheme] = useState("green");
+  const [themeMode, setThemeMode] = useState("light");
+  const [colorTheme, setColorTheme] = useState("text-green-50");
   const toggleTheme = () => {
     if (themeMode === "dark") setThemeMode("light");
     else setThemeMode("dark");
@@ -19,7 +21,12 @@ function App() {
     <ThemeProvider
       value={{ themeMode, colorTheme, toggleTheme, provideColorTheme }}
     >
-      <div className="dark:bg-baseTheme h-screen w-screen"></div>
+      <div className="bg-bgTheme dark:bg-gray-400 text-textLignt flex gap-0">
+        <Navigation />
+        <div className="flex-grow">
+          <Home />
+        </div>
+      </div>
     </ThemeProvider>
   );
 }

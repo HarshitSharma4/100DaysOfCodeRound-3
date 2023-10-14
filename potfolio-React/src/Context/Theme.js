@@ -1,7 +1,7 @@
 import { createContext, useContext } from "react";
 
 export const theme = createContext({
-  themeMode: "dark",
+  themeMode: "light",
   colorTheme: "green",
   toggleTheme: () => {},
   provideColorTheme: (theme) => {},
@@ -9,7 +9,7 @@ export const theme = createContext({
 
 export const ThemeProvider = theme.Provider;
 
-const useTheme = () => {
+export const useTheme = () => {
   return useContext(theme);
 };
-export default useTheme;
+//export default useTheme;

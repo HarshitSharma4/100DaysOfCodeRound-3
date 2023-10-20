@@ -5,6 +5,10 @@ export default {
   theme: {
     extend: {
       colors: {
+        //darkBgTheme: "#1E1E1E",
+        //darkBgTheme: "#000000",
+        darkBgTheme: "#1B1717",
+        darkBaseTheme: "#3C3C44",
         baseTheme: "#2E2E47",
         bgTheme: "#464567",
         btnTheme: "#605F8E",

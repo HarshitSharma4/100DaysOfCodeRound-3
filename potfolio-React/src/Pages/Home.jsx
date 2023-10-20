@@ -4,9 +4,12 @@ const Home = () => {
   console.log(theme);
 
   return (
-    <div className="h-screen">
+    <div className="h-screen" id="home">
       <h1>
-        Hey,I am <span className={theme.colorTheme}>Harshit Sharma</span>
+        Hey,I am{" "}
+        <span className={theme.colorTheme === "Green" && "text-green"}>
+          Harshit Sharma
+        </span>
       </h1>
     </div>
   );

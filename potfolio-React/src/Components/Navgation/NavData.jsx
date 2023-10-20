@@ -23,7 +23,7 @@ export const NavLogo = {
 export const Navdata = [
   {
     icon: <AiFillHome />,
-    name: "Hame",
+    name: "Home",
     section: "home",
   },
   {

@@ -2,9 +2,11 @@ import { createContext, useContext } from "react";
 
 export const theme = createContext({
   themeMode: "light",
-  colorTheme: "green",
+  colorTheme: "Green",
   toggleTheme: () => {},
-  provideColorTheme: (theme) => {},
+  greenColorTheme: () => {},
+  yellowColorTheme: () => {},
+  blueColorTheme: () => {},
 });
 
 export const ThemeProvider = theme.Provider;

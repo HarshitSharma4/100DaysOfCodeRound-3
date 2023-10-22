@@ -5,6 +5,9 @@ import Home from "./Pages/Home";
 import ChangeMode from "./Components/ChangeMode";
 import ChangeColorTheme from "./Components/ChangeColorTheme";
 import About from "./Pages/About";
+import Skills from "./Pages/Skills";
+import Project from "./Pages/Project";
+import ContactMe from "./Pages/ContactMe";
 function App() {
   const [themeMode, setThemeMode] = useState("dark");
   const [colorTheme, setColorTheme] = useState("text-green border-green");
@@ -43,7 +46,10 @@ function App() {
         <ChangeColorTheme />
         <div className="flex-grow">
           <Home />
+          <Skills />
+          <Project />
           <About />
+          <ContactMe />
         </div>
       </div>
     </ThemeProvider>

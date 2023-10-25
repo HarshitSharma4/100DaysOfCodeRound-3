@@ -68,8 +68,10 @@ function ChangeColorTheme() {
     <div>
       <div
         className={twJoin(
-          "fixed bottom-7 right-7 cursor-pointer rounded-[100%] p-3 text-xl md:text-2xl border-solid border-2",
-          theme.colorTheme
+          "fixed bottom-7 right-7 cursor-pointer  rounded-[100%] p-3 text-xl md:text-2xl border-solid border-2",
+          theme.colorTheme.text,
+          theme.colorTheme.border,
+          theme.colorTheme.btn
         )}
         onClick={() => {
           setDailog(!dailog);

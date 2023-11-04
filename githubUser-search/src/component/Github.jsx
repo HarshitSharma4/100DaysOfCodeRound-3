@@ -4,29 +4,35 @@ import { BsBoxArrowUpRight } from "react-icons/bs";
 import { useState, useEffect } from "react";
 import axios from "axios";
 import "./github.css";
+import { useDebounce } from "../CustomHooks/useDebounce";
 const Github = () => {
   const [darkMode, setdarkMode] = useState(true);
   const [searchText, setsearchText] = useState("");
   const [apidata, setapiData] = useState({});
+  const searchValue = useDebounce(searchText);
   const handelchange = (event) => {
     setsearchText(event.target.value);
   };
-  const keydn = (event) => {
-    console.log(event.key);
-    if (event.key === "Enter") {
-      getUserData(searchText);
-    }
-  };
+
   const apiKey = "https://api.github.com/users/";
   const getUserData = (user) => {
-    axios(apiKey + user).then((response) => {
-
-      setapiData(response.data);
-    });
+    axios(apiKey + user)
+      .then((response) => {
+        setapiData(response.data);
+      })
+      .catch((error) => {
+        alert(error);
+      });
   };
   useEffect(() => {
     getUserData("unique011");
   }, []);
+  useEffect(() => {
+    if (searchValue === "") return;
+    console.log(searchValue);
+    getUserData(searchValue);
+  }, [searchValue]);
+
   return (
     <div
       className="github"
@@ -60,29 +66,28 @@ const Github = () => {
             <br />
             one search away.
           </h1>
-          <input
-            type="text"
-            placeholder="Search"
-            onChange={handelchange}
-            onKeyDown={keydn}
-          />
+          <input type="text" placeholder="Search" onChange={handelchange} />
         </div>
         <div className="result">
-          <img src={apidata?.avatar_url} alt="UserAcountImage" />
-          <h3>login : {apidata?.login}</h3>
-          <h3>Name : {apidata?.name}</h3>
-          {/* <h3>Email : {apidata?.email}</h3> */}
-          <a
-            style={
-              darkMode
-                ? { color: "rgba(255, 255, 255, 0.87)" }
-                : { color: "#242424" }
-            }
-            href={apidata?.html_url}
-          >
-            Github
-            <BsBoxArrowUpRight />{" "}
-          </a>
+          {apidata?.avatar_url && (
+            <img src={apidata?.avatar_url} alt="UserAcountImage" />
+          )}
+          {apidata?.login && <h3>login : {apidata?.login}</h3>}
+          {apidata?.name && <h3>Name : {apidata?.name}</h3>}
+          {apidata?.email && <h3>Email : {apidata?.email}</h3>}
+          {apidata?.html_url && (
+            <a
+              style={
+                darkMode
+                  ? { color: "rgba(255, 255, 255, 0.87)" }
+                  : { color: "#242424" }
+              }
+              href={apidata?.html_url}
+            >
+              Github
+              <BsBoxArrowUpRight />{" "}
+            </a>
+          )}
         </div>
       </div>
       <div className="footer">

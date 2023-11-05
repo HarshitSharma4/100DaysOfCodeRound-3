@@ -25,12 +25,13 @@ const Github = () => {
       });
   };
   useEffect(() => {
-    getUserData("unique011");
+    getUserData("Harshitsharma4");
   }, []);
   useEffect(() => {
     if (searchValue === "") return;
-    console.log(searchValue);
+  
     getUserData(searchValue);
+    
   }, [searchValue]);
 
   return (
@@ -60,7 +61,7 @@ const Github = () => {
       </div>
       <div className="main">
         <div className="repo">
-          <h1>
+          <h1 className="hading">
             The best <br />
             repositories
             <br />
@@ -75,6 +76,8 @@ const Github = () => {
           {apidata?.login && <h3>login : {apidata?.login}</h3>}
           {apidata?.name && <h3>Name : {apidata?.name}</h3>}
           {apidata?.email && <h3>Email : {apidata?.email}</h3>}
+          {apidata?.bio && <h3> Bio : {apidata?.bio}</h3>}
+
           {apidata?.html_url && (
             <a
               style={

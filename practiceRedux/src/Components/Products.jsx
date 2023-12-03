@@ -5,7 +5,6 @@ import { setProducts } from "../Redux/Actions/ProductActions";
 import Card from "./Card";
 const Products = () => {
   const dispatch = useDispatch();
-
   const getProducts = () => {
     axios("https://fakestoreapi.com/products")
       .then((respons) => {

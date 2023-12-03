@@ -1,6 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-export const AddCart = createSlice({
+const AddCart = createSlice({
   name: "AddToCart",
   initialState: {
     items: [],

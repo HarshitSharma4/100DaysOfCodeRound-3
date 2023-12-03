@@ -75,7 +75,7 @@ function App() {
           <ChangeMode />
           <ChangeColorTheme />
           <ScrollToTop />
-          <div className="flex-grow">
+          <div className="flex-grow overflow-hidden">
             <Home />
             <Skills />
             <Project />

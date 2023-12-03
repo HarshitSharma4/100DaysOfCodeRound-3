@@ -8,7 +8,7 @@ const Navigation = () => {
           <img
             src={NavLogo.logo2}
             alt="Logo"
-            className="object-cover h-full w-full"
+            className="object-cover h-24 w-24 md:h-full md:w-full"
           />
         </div>
         <div className="Navitems flex flex-col gap-4 items-center justify-center md:justify-normal md:py-8 flex-grow">

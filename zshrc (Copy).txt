@@ -1,0 +1,191 @@
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+
+# If you come from bash you might have to change your $PATH.
+# export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
+
+# Path to your Oh My Zsh installation.
+export ZSH="$HOME/.oh-my-zsh"
+
+# Set name of the theme to load --- if set to "random", it will
+# load a random theme each time Oh My Zsh is loaded, in which case,
+# to know which specific one was loaded, run: echo $RANDOM_THEME
+# See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
+#ZSH_THEME="robbyrussell"
+ZSH_THEME="powerlevel10k/powerlevel10k"
+
+
+# Set list of themes to pick from when loading at random
+# Setting this variable when ZSH_THEME=random will cause zsh to load
+# a theme from this variable instead of looking in $ZSH/themes/
+# If set to an empty array, this variable will have no effect.
+# ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
+
+# Uncomment the following line to use case-sensitive completion.
+# CASE_SENSITIVE="true"
+
+# Uncomment the following line to use hyphen-insensitive completion.
+# Case-sensitive completion must be off. _ and - will be interchangeable.
+# HYPHEN_INSENSITIVE="true"
+
+# Uncomment one of the following lines to change the auto-update behavior
+# zstyle ':omz:update' mode disabled  # disable automatic updates
+# zstyle ':omz:update' mode auto      # update automatically without asking
+# zstyle ':omz:update' mode reminder  # just remind me to update when it's time
+
+# Uncomment the following line to change how often to auto-update (in days).
+# zstyle ':omz:update' frequency 13
+
+# Uncomment the following line if pasting URLs and other text is messed up.
+# DISABLE_MAGIC_FUNCTIONS="true"
+
+# Uncomment the following line to disable colors in ls.
+# DISABLE_LS_COLORS="true"
+
+# Uncomment the following line to disable auto-setting terminal title.
+# DISABLE_AUTO_TITLE="true"
+
+# Uncomment the following line to enable command auto-correction.
+# ENABLE_CORRECTION="true"
+
+# Uncomment the following line to display red dots whilst waiting for completion.
+# You can also set it to another string to have that shown instead of the default red dots.
+# e.g. COMPLETION_WAITING_DOTS="%F{yellow}waiting...%f"
+# Caution: this setting can cause issues with multiline prompts in zsh < 5.7.1 (see #5765)
+# COMPLETION_WAITING_DOTS="true"
+
+# Uncomment the following line if you want to disable marking untracked files
+# under VCS as dirty. This makes repository status check for large repositories
+# much, much faster.
+# DISABLE_UNTRACKED_FILES_DIRTY="true"
+
+# Uncomment the following line if you want to change the command execution time
+# stamp shown in the history command output.
+# You can set one of the optional three formats:
+# "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
+# or set a custom format using the strftime function format specifications,
+# see 'man strftime' for details.
+# HIST_STAMPS="mm/dd/yyyy"
+
+# Would you like to use another custom folder than $ZSH/custom?
+# ZSH_CUSTOM=/path/to/new-custom-folder
+
+# Which plugins would you like to load?
+# Standard plugins can be found in $ZSH/plugins/
+# Custom plugins may be added to $ZSH_CUSTOM/plugins/
+# Example format: plugins=(rails git textmate ruby lighthouse)
+# Add wisely, as too many plugins slow down shell startup.
+#plugins=(git)
+plugins=(
+  git
+  zsh-syntax-highlighting
+  zsh-autosuggestions
+  zsh-completions
+  autojump
+  # ... other plugins
+)
+source $ZSH/oh-my-zsh.sh
+
+# User configuration
+
+# export MANPATH="/usr/local/man:$MANPATH"
+
+# You may need to manually set your language environment
+# export LANG=en_US.UTF-8
+
+# Preferred editor for local and remote sessions
+# if [[ -n $SSH_CONNECTION ]]; then
+#   export EDITOR='vim'
+# else
+#   export EDITOR='nvim'
+# fi
+
+# Compilation flags
+# export ARCHFLAGS="-arch $(uname -m)"
+
+# Set personal aliases, overriding those provided by Oh My Zsh libs,
+# plugins, and themes. Aliases can be placed here, though Oh My Zsh
+# users are encouraged to define aliases within a top-level file in
+# the $ZSH_CUSTOM folder, with .zsh extension. Examples:
+# - $ZSH_CUSTOM/aliases.zsh
+# - $ZSH_CUSTOM/macos.zsh
+# For a full list of active aliases, run `alias`.
+#
+# Example aliases
+# alias zshconfig="mate ~/.zshrc"
+# alias ohmyzsh="mate ~/.oh-my-zsh"
+eval "$(powerlevel10k-config)"
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+clear
+
+# Clear the terminal
+clear
+
+# Define an array of 50 inspirational quotes for software architects
+quotes=(
+  "🚀 Embrace the journey of learning; every line of code is a step toward greatness."
+  "💻 Every bug you fix is a lesson learned – grow stronger with each challenge."
+  "🌱 Learn something new every day; your future self will thank you."
+  "📚 Invest in your mind; knowledge is the foundation of brilliant software."
+  "🔥 The best code is written by those who never stop learning."
+  "💡 Creativity in code comes from curiosity and the courage to experiment."
+  "🛠️ Build systems that inspire you to evolve – every refactor is progress."
+  "🤖 Stay curious, adapt, and innovate; technology rewards lifelong learners."
+  "🌟 Your code reflects your growth – push boundaries and embrace change."
+  "🚀 Software architecture is a journey of continuous evolution and innovation."
+  "💡 Every challenge is an opportunity to learn and build something amazing."
+  "📚 Dedicate time to learning – great systems start with a well-educated mind."
+  "🌱 Growth is continuous; embrace errors as stepping stones to mastery."
+  "🛠️ Build your legacy in code by always striving to learn and improve."
+  "🔥 Passion fuels progress – let every project ignite your desire to grow."
+  "💻 Code with intention, learn with passion, and architect with vision."
+  "📚 A great architect never stops learning; every obstacle teaches a lesson."
+  "🚀 Transform obstacles into opportunities to innovate and excel."
+  "💡 Every refactor is a chance to reimagine your work and build a better future."
+  "🌟 Be relentless in your pursuit of knowledge, and your code will shine."
+  "🛠️ The art of software architecture is built on curiosity and constant improvement."
+  "🤖 Stay hungry for knowledge; the world of code is limitless."
+  "🔥 Keep your mind open, your code clean, and your passion burning bright."
+  "💻 Learning never stops – let every error guide you toward excellence."
+  "📚 Great software is the result of relentless learning and bold innovation."
+  "🌱 Your growth as a developer is measured by your willingness to learn."
+  "🚀 Dream big, code passionately, and never stop evolving."
+  "💡 Let each line of code be a testament to your commitment to improvement."
+  "🛠️ Challenge yourself every day – learn, build, and exceed your limits."
+  "🤖 Innovate fearlessly; every failure is a lesson in disguise."
+  "🔥 Let your curiosity drive you to explore new horizons in technology."
+  "💻 A true architect embraces change and the power of continuous learning."
+  "📚 Expand your mind, and your code will transform into art."
+  "🌱 Every moment spent learning plants a seed for future innovation."
+  "🚀 Elevate your skills by challenging yourself with bold new projects."
+  "💡 Let the glow of new ideas light your path to perpetual growth."
+  "🛠️ Build not just software, but a legacy of lifelong learning and innovation."
+  "🤖 A passionate coder turns every bug into a stepping stone for improvement."
+  "🔥 The journey of a software architect is paved with persistence and curiosity."
+  "💻 Never settle – strive to learn, improve, and redefine what's possible."
+  "📚 Every minute spent learning today is an investment in a brilliant tomorrow."
+  "🌟 Innovate, experiment, and let your creativity inspire every project."
+  "🚀 Approach each new session as a chance to expand your knowledge and craft."
+  "💡 Embrace the unknown – every challenge is an opportunity to discover your strengths."
+  "🛠️ Transform your passion for code into a journey of continual improvement."
+  "🤖 Let your vision drive your quest for knowledge in technology."
+  "🔥 Coding is an adventure – learn from every twist and turn along the way."
+  "💻 Keep learning, keep coding, and let your growth inspire every creation."
+  "📚 The best architects are perpetual students – never stop asking questions."
+  "🌱 With every new skill you acquire, you become a stronger developer and a wiser architect."
+)
+
+# Pick a random quote and display it
+random_index=$(( RANDOM % ${#quotes[@]} ))
+echo ""
+echo "${quotes[$random_index]}"
+echo ""
+
+
